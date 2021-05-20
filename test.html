@@ -4,98 +4,130 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>自主學習</title>
-		<link href='666.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link href='666.css' rel='stylesheet' type='text/css'>
   </head>
   <body bgcolor="#CCFFFF">
-  <nav class="navbar is-black" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <img src="https://upload.cc/i1/2020/12/18/WhzSCj.png">
-    </a>
-
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-		<a class="navbar-item" href="https://skynoel.github.io/pageforwork/2.html">產品一</a>
-      <a class="navbar-item">
-        Home
-      </a>
-
-      <a class="navbar-item">
-        Documentation
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More
-        </a>
-
-        <div class="navbar-dropdown">
-          <a class="navbar-item">
-            About
+    <div class="wrapper">
+      <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="https://upload.cc/i1/2020/12/18/WhzSCj.png">
           </a>
-          <a class="navbar-item">
-            Jobs
-          </a>
-          <a class="navbar-item">
-            Contact
-          </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            Report an issue
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
           </a>
         </div>
-      </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+          <a class="navbar-item" href="https://skynoel.github.io/pageforwork/2.html">產品一</a>
+            <a class="navbar-item">
+              Home
+            </a>
+      
+            <a class="navbar-item">
+              Documentation
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                More
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                  About
+                </a>
+                <a class="navbar-item">
+                  Jobs
+                </a>
+                <a class="navbar-item">
+                  Contact
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  Report an issue
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="contents">
+        <section class="section">
+          <div class="container">
+            <h1 class="title">
+              大家好
+            </h1>
+            <p class="subtitle">
+              神奇的網站 <strong>skynoel</strong>撰寫
+            </p>
+          </div>
+        </section>
+        <div class="haha">
+          <div class="card is-warning">
+            <div class="card-image">
+            <figure class="image">
+              <img src="https://upload.cc/i1/2020/12/18/WhzSCj.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              666
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="haha">
+          <div class="card is-warning">
+          <div class="card-content">
+            <div class="content">
+              6666
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="clearstyle"></div>
+      </main>
     </div>
-
-    <div class="navbar-end">
-      <div class="navbar-item">
-      </div>
-    </div>
-  </div>
-</nav>
-<main id="contents">
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        大家好
-      </h1>
-      <p class="subtitle">
-        神奇的網站 <strong>skynoel</strong>撰寫
-      </p>
-    </div>
-  </section>
-<div class="haha">
-  <div class="card is-warning">
-    <div class="card-image">
-    <figure class="image is-5by3">
-      <img src="https://upload.cc/i1/2021/03/19/pTL672.jpg" alt="Placeholder image">
-    </figure>
-  </div>
-  <div class="card-content">
-    <div class="content">
-      陳麒帆是猴子
-    </div>
-  </div>
-</div>
-</div>
-<div class="haha">
-  <div class="card is-warning">
-  <div class="card-content">
-    <div class="content">
-      猴子!猴子!猴子!猴子!
-    </div>
-  </div>
-</div>
-</div>
-<div class="clearstyle"></div>
-</main>
+    <footer class="footer">
+      Copyright © 2021 skynoel
+    </footer>
   </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Check if there are any navbar burgers
+if ($navbarBurgers.length > 0) {
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+}
+
+});
+  </script>
 </html>
